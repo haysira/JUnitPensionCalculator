@@ -796,6 +796,7 @@ class PensionServiceIMPTest {
 		test.add("N");//istimewa
 		ArrayList<String> output = pc.kirapencen(test);
 		String tiadaganjaran = output.get(2);
+		
 		if (tiadaganjaran.equals("0")) {
 			actPension = Double.parseDouble(output.get(4));
 			actGratuity = Double.parseDouble(output.get(5));
@@ -879,6 +880,7 @@ class PensionServiceIMPTest {
 		test.add("N");//istimewa
 		ArrayList<String> output = pc.kirapencen(test);
 		String tiadaganjaran = output.get(2);
+		
 		if (tiadaganjaran.equals("0")) {
 			actPension = Double.parseDouble(output.get(4));
 			actGratuity = Double.parseDouble(output.get(5));
@@ -920,6 +922,7 @@ class PensionServiceIMPTest {
 		test.add("N");//istimewa
 		ArrayList<String> output = pc.kirapencen(test);
 		String tiadaganjaran = output.get(2);
+		
 		if (tiadaganjaran.equals("0")) {
 			actPension = Double.parseDouble(output.get(4));
 			actGratuity = Double.parseDouble(output.get(5));
@@ -1725,8 +1728,8 @@ class PensionServiceIMPTest {
 		test.add("1");
 		test.add("1");
 		test.add("1970");//tahunlahir
-		test.add("12");
-		test.add("10");
+		test.add("28");
+		test.add("8");
 		test.add("1987");//tahunkerja
 		test.add("3000");//gaji
 		test.add("110");//allowance
@@ -1779,8 +1782,8 @@ class PensionServiceIMPTest {
 		test.add("1");
 		test.add("1");
 		test.add("1970");//tahunlahir
-		test.add("12");
-		test.add("10");
+		test.add("28");
+		test.add("8");
 		test.add("1987");//tahunkerja
 		test.add("3000");//gaji
 		test.add("110");//allowance
@@ -1833,8 +1836,8 @@ class PensionServiceIMPTest {
 		test.add("1");
 		test.add("1");
 		test.add("1970");//tahunlahir
-		test.add("12");
-		test.add("10");
+		test.add("28");
+		test.add("8");
 		test.add("1987");//tahunkerja
 		test.add("3000");//gaji
 		test.add("110");//allowance
@@ -1886,8 +1889,8 @@ class PensionServiceIMPTest {
 		test.add("1");
 		test.add("1");
 		test.add("1970");//tahunlahir
-		test.add("12");
-		test.add("10");
+		test.add("28");
+		test.add("8");
 		test.add("2001");//tahunkerja
 		test.add("3000");//gaji
 		test.add("110");//allowance
@@ -1939,8 +1942,8 @@ class PensionServiceIMPTest {
 		test.add("1");
 		test.add("1");
 		test.add("1970");//tahunlahir
-		test.add("12");
-		test.add("10");
+		test.add("28");
+		test.add("8");
 		test.add("2001");//tahunkerja
 		test.add("3000");//gaji
 		test.add("110");//allowance
@@ -2024,6 +2027,7 @@ class PensionServiceIMPTest {
 				assertEquals(bulankira,113);
 	}
 
+	@Test
 	void testcase36() { //TC36 Retirementdate = 21/2/2010 StartKerja = 21/8/2000 -114
 		ArrayList<String> test = new ArrayList<>();
 		test.add("1");
@@ -2062,6 +2066,8 @@ class PensionServiceIMPTest {
 				int bulankira = ((ttk * 12) + tbk) - bulan_cuti_tg;
 				assertEquals(bulankira,114);
 	}
+	
+	@Test
 	void testcase37() { //TC37 Retirementdate = 30/8/2010 StartKerja = 10/2/2000 -126
 		ArrayList<String> test = new ArrayList<>();
 		test.add("1");
@@ -2100,6 +2106,8 @@ class PensionServiceIMPTest {
 				int bulankira = ((ttk * 12) + tbk) - bulan_cuti_tg;
 				assertEquals(bulankira,126);
 	}
+	
+	@Test
 	void testcase38() { //TC38 Retirementdate = 12/8/2010 StartKerja = 21/2/2000 -125
 		ArrayList<String> test = new ArrayList<>();
 		test.add("1");
